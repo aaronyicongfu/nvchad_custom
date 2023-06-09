@@ -38,6 +38,15 @@ local plugins = {
     opts = overrides.nvimtree,
   },
 
+  {
+    "nvim-telescope/telescope.nvim",
+    opts = {
+    -- Default magnifier glass doesn't work for iTerm2, change it to a
+    -- different one
+    defaults = {prompt_prefix = "   "},
+    }
+  },
+
   -- Install a plugin
   {
     "max397574/better-escape.nvim",
